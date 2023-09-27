@@ -1,0 +1,140 @@
+body{    
+  min-height: 100vh;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  /*Flexionar o elemento para a o centro*/
+  justify-content: center; 
+
+  align-items: center;
+
+  background-color: #0e0916;
+  color: #ebebeb;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+  text-align: center;
+}
+
+.cabecalho > h1 {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+.conteudo {
+  display: grid;
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin-top: 25px;
+}
+
+.controles{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+  height: 30px;
+}
+
+.textbox-chute{
+  width: 40px;
+  height: 100%;
+  border: none;
+  border-radius: 1vmax;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.btn-avaliar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  width: 120px;
+
+  background-color: #2fb974;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  border: 1px solid #2fb974;
+  border-radius: 10px;
+
+  transition: background-color 1s ease-in;
+}
+
+.btn-avaliar:hover {
+  background-color: #0c6b3b;
+  cursor: pointer;
+}
+
+.btn-tentar-novamente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  padding: 5px 15px;
+
+  background-color: transparent;
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.btn-tentar-novamente:hover {
+  cursor: pointer;
+  background-color: #7e748d;
+}
+
+.notificacao-acerto{
+  text-align: center;
+
+  color: #2fb974;
+
+  border: 1px solid #2fb974;
+  border-radius: 15px;
+
+  padding: 10px;
+  max-width: 400px;   
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notificacao-erro{
+  text-align: center;
+
+  color: #ff1c1c;
+
+  border: 1px solid #ff1c1c;
+  border-radius: 15px;
+
+  padding: 10px;
+  max-width: 400px;   
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}

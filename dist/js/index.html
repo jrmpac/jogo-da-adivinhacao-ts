@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="module" src="js/tela-adivinhacao.js" defer></script>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Jogo de Adivinhação</h1>
+        <h2>Digite um número entre 1 e 20</h2>        
+    </div>    
+
+    <div id="pnlConteudo" class="conteudo">
+
+        <div class="controles">
+            <input id="txtChute" class="textbox-chute" type="text">
+            <button id="btnAvaliar" class="btn-avaliar">
+                <span class="material-symbols-outlined">
+                    search_check
+                    </span>
+                    Avaliar</button>
+        </div>        
+
+        <button id="btnTentarNovamente" class="btn-tentar-novamente">
+            <span class="material-symbols-outlined">
+                refresh
+                </span>
+                Tentar Novamente</button>
+    </div>
+</body>
+</html>
